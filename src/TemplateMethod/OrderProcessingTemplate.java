@@ -4,8 +4,9 @@ public abstract class OrderProcessingTemplate {
 
     public final void processOrder() {
         validateOrder();
-        processPayment();
+        prepareShipment();
         shipOrder();
+        finalizePayment();
         sendNotification();
     }
 
@@ -17,9 +18,9 @@ public abstract class OrderProcessingTemplate {
     }
 
     /**
-     * Bước 2: Xử lý thanh toán - THAY ĐỔI (abstract)
+     * Bước 2: Chuẩn bị shipment (bao gồm reserve stock, và tùy loại: payment trước hoặc sau) - THAY ĐỔI (abstract)
      */
-    protected abstract void processPayment();
+    protected abstract void prepareShipment();
 
     /**
      * Bước 3: Vận chuyển đơn hàng - THAY ĐỔI (abstract)
@@ -27,7 +28,19 @@ public abstract class OrderProcessingTemplate {
     protected abstract void shipOrder();
 
     /**
-     * Bước 4: Gửi thông báo - CỐ ĐỊNH
+     * Bước 4: Hoàn tất thanh toán (nếu cần) - THAY ĐỔI (abstract)
+     */
+    protected abstract void finalizePayment();
+
+    /**
+     * Helper: Reserve stock - CỐ ĐỊNH (chung cho cả hai loại)
+     */
+    protected void reserveStock() {
+        System.out.println("Stock reserved successfully");
+    }
+
+    /**
+     * Bước cuối: Gửi thông báo - CỐ ĐỊNH
      */
     private void sendNotification() {
         System.out.println("Notification sent successfully");
