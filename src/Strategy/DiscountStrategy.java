@@ -1,6 +1,7 @@
 package Strategy;
 
+// Strategy interface
 public interface DiscountStrategy {
-    // Áp dụng giảm giá và trả về giá cuối cùng
-    double applyDiscount(double totalAmount);
+    double applyDiscount(double originalPrice);
+    String getDescription();
 }
