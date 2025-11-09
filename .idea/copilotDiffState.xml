@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/Builder/Director.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/Builder/Director.java" />
+              <option name="originalContent" value="package Builder;&#10;&#10;public class Director {&#10;    private Builder builder;&#10;&#10;    public Director(Builder builder) {&#10;        this.builder = builder;&#10;    }&#10;&#10;    public Product constructProduct() {&#10;        builder.buildName();&#10;        builder.buildCategory();&#10;        builder.buildPrice();&#10;        builder.buildManufacturer();&#10;        return builder.getProduct();&#10;    }&#10;&#10;    public Product buildGamingPC() {&#10;        builder.reset();&#10;        builder.setName(&quot;PC Gaming Enthusiast&quot;);&#10;        builder.setCategory(&quot;Gaming PC&quot;);&#10;        builder.setPrice(3999.00);&#10;        builder.setManufacturer(&quot;Custom Build&quot;);&#10;        return builder.getProduct();&#10;    }&#10;&#10;    public Product buildOfficePC() {&#10;        builder.reset();&#10;        builder.setName(&quot;PC Office Productivity&quot;);&#10;        builder.setCategory(&quot;Office PC&quot;);&#10;        builder.setPrice(899.00);&#10;        builder.setManufacturer(&quot;Custom Build&quot;);&#10;        return builder.getProduct();&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package Builder;&#10;&#10;public class Director {&#10;    private Builder builder;&#10;&#10;    public Director(Builder builder) {&#10;        this.builder = builder;&#10;    }&#10;&#10;    public Product constructProduct() {&#10;        builder.buildName();&#10;        builder.buildCategory();&#10;        builder.buildPrice();&#10;        builder.buildManufacturer();&#10;        return builder.getProduct();&#10;    }&#10;&#10;    public Product buildGamingPC() {&#10;        builder.reset();&#10;        builder.setName(&quot;PC Gaming Enthusiast&quot;);&#10;        builder.setCategory(&quot;Gaming PC&quot;);&#10;        builder.setPrice(3999.00);&#10;        builder.setManufacturer(&quot;Custom Build&quot;);&#10;        return builder.getProduct();&#10;    }&#10;&#10;    public Product buildOfficePC() {&#10;        builder.reset();&#10;        builder.setName(&quot;PC Office Productivity&quot;);&#10;        builder.setCategory(&quot;Office PC&quot;);&#10;        builder.setPrice(899.00);&#10;        builder.setManufacturer(&quot;Custom Build&quot;);&#10;        return builder.getProduct();&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
