@@ -9,8 +9,9 @@ public class ProxyPatternDemo {
 
         while (true) {
             System.out.println("\n" + "=" .repeat(50));
-            System.out.println("🏪 CỬA HÀNG TRỰC TUYẾN");
+            System.out.println("CỬA HÀNG TRỰC TUYẾN");
             System.out.println("=" .repeat(50));
+            System.out.println("1. Xem danh sách sản phẩm");
             System.out.println("2. Xem chi tiết sản phẩm");
             System.out.println("3. Thoát");
             System.out.print("Chọn chức năng: ");

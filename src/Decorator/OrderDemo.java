@@ -38,7 +38,6 @@ public class OrderDemo {
 
     private static void printOrderDetails(Order order) {
         System.out.println("Mô tả: " + order.getDescription());
-        System.out.println("Tổng chi phí: $" + String.format("%.2f", order.getCost()));
-        System.out.println("------------------------");
+        System.out.print("Tổng chi phí: $" + String.format("%.2f", order.getCost()));
     }
 }

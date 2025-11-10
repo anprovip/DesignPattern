@@ -21,7 +21,7 @@ public class ProductGallery {
 
     public void displayThumbnails() {
         System.out.println("=" .repeat(50));
-        System.out.println("🖼️  GALLERY SẢN PHẨM - HIỂN THỊ THUMBNAIL");
+        System.out.println("GALLERY SẢN PHẨM - HIỂN THỊ THUMBNAIL");
         System.out.println("=" .repeat(50));
 
         for (int i = 0; i < productImages.size(); i++) {

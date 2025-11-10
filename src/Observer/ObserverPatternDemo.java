@@ -28,13 +28,13 @@ public class ObserverPatternDemo {
         System.out.println("\n--- THAY ĐỔI TRẠNG THÁI 2 ---");
         iphone.setStatus("In Stock");
 
-        // Thêm khách hàng mới đăng ký
-        System.out.println("\n--- ĐĂNG KÝ MỚI ---");
-        Customer customer4 = new Customer("Phạm Thị D", "phamthid@email.com");
-        iphone.registerObserver(customer4);
-
-        // Thay đổi trạng thái lần nữa
-        System.out.println("\n--- THAY ĐỔI TRẠNG THÁI 3 ---");
-        iphone.setStatus("Limited Stock");
+//        // Thêm khách hàng mới đăng ký
+//        System.out.println("\n--- ĐĂNG KÝ MỚI ---");
+//        Customer customer4 = new Customer("Phạm Thị D", "phamthid@email.com");
+//        iphone.registerObserver(customer4);
+//
+//        // Thay đổi trạng thái lần nữa
+//        System.out.println("\n--- THAY ĐỔI TRẠNG THÁI 3 ---");
+//        iphone.setStatus("Limited");
     }
 }
